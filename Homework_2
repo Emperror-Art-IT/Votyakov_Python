@@ -1,0 +1,106 @@
+# Задача 1
+# Примечания: x = 10 и y = 13
+
+x = int(input('Введите первое число: '))
+y = int(input('Введите второе число: '))
+if x >= 5 and y < 25:
+    print('True')
+else:
+    print('False')
+
+# Ответ --->
+# True
+
+
+# Задача 2
+# Примечания: x = 8b66bBT67 и y = 8b66bBT67
+
+x = input('Введите пароль: ')
+y = input('Введите пароль еще раз: ')
+if x == y:
+    print('True')
+else:
+    print('False')
+
+# Ответ --->
+# True
+
+
+# Задача 3
+# Примечания: в консоль ввести числа 12, 10, 5 и 21
+
+a = first_number = int(input('Введите первое число: '))
+b = second_number = int(input('Введите второе число: '))
+c = third_number = int(input('Введите третье число: '))
+d = fourth_number = int(input('Введите четвертое число: '))
+print(min(a, b, c, d))
+
+# Ответ --->
+# 5
+
+
+# Задача 4
+# Примечания: в консоль ввести числа 12, 10, 5 и 21
+
+a = first_number = int(input('Введите первое число: '))
+b = second_number = int(input('Введите второе число: '))
+c = third_number = int(input('Введите третье число: '))
+d = fourth_number = int(input('Введите четвертое число: '))
+print(max(a, b, c, d))
+
+# Ответ --->
+# 21
+
+
+# Задача 5
+# Примечания: в консоль ввести числа 13, 19 и 15
+
+a = first_number = int(input('Введите первое число: '))
+b = second_number = int(input('Введите второе число: '))
+c = third_number = int(input('Введите третье число: '))
+if a + b > c and a + c > b and b + c > a:
+    print('True')
+else:
+    print('False')
+
+# Ответ --->
+# True
+
+
+# Задача 6
+# Примечания: в консоль ввести числа 10, 13, 23
+
+a = first_number = int(input('Введите первое число: '))
+b = second_number = int(input('Введите второе число: '))
+c = third_number = int(input('Введите третье число: '))
+if a + b > c and a + c > b and b + c > a:
+    if a == b and a == c and b == c:
+        print('Треугольник является равносторонним.')
+    elif (a == b and a == c) or (b == a and b == c) or (c == a and c == b):
+        print('Треугольник является равнобедренным.')
+    else:
+        print('Треугольник является разносторонним.')
+else:
+    print('Треугольник c такими сторонами построить невозможно!')
+
+# Ответ --->
+# Треугольник с такими сторонами построить невозможно!
+
+
+# Задача 7
+# Примечания: в консоль ввести числа 3, 13, 7, 17
+
+a = first_number = int(input('Введите первое число: '))
+b = second_number = int(input('Введите второе число: '))
+c = third_number = int(input('Введите третье число: '))
+d = fourth_number = int(input('Введите четвертое число: '))
+start = max(a, c)
+end = min(b, d)
+if start > end:
+    print('Отрезки не пересекаются!')
+else:
+    count = end - start + 1
+    print(f'Количество целых точек, являющихся пересечением отрезков [a, b] и [c, d]: {count}.')
+
+# Ответ --->
+# Количество целых точек, являющихся пересечением отрезков [a, b] и [c, d]: 7.
