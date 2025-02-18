@@ -1,0 +1,74 @@
+# Задача 1
+# Примечания: ввести числа 12 и 34
+
+a = []
+n = a.append(int(input()))
+m = a.append(int(input()))
+
+print(sum(a))
+
+# Ответ --->
+# 46
+
+
+# Задача 2
+# Примечания: ввести строку "Программирование после школы!"
+
+string = input()
+words = string.split()
+print(words[0] + ' ' + words[-1])
+
+# Ответ --->
+# Программирование школы!
+
+
+# Задача 3
+# Примечания: ввести строку "Вот Вотяков нетипичный учитель."
+
+string = input()
+words = string.split()
+print(words)
+
+longest_word = words[0]  # Инициализируем самое длинное слово первым словом
+for word in words:
+    if len(word) > len(longest_word):
+        longest_word = word
+print(longest_word)
+
+# Ответ --->
+# нетипичный
+
+
+# Задача 4
+# Примечания: ввести число 1000
+
+n = int(input())
+a = []
+for i in range(1, n+1):
+    if i % 3 == 0 or i % 5 == 0:
+        a.append(i)
+print(sum(a))
+
+# Ответ --->
+# 234168
+
+
+# Задача 5
+# Примечания: ввести строку "cat cat dog cat dog dog cat cat dog dog cat"
+
+a = input("Введите строку текста: ")
+words = a.split()
+
+word_counts = {}
+for word in words:
+    if word in word_counts:
+        word_counts[word] += 1
+    else:
+        word_counts[word] = 1
+
+most_common_word = max(word_counts, key=word_counts.get)
+number_of_meetings = word_counts[most_common_word]
+print(f"Самое часто встречающееся слово: '{most_common_word}' (встречается {number_of_meetings} раз).")
+
+# Ответ --->
+# cat
